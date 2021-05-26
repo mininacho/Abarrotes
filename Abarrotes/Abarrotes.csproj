@@ -1,0 +1,359 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A88E4122-89CB-4A9F-A054-72BA455D3941}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Abarrotes</RootNamespace>
+    <AssemblyName>Abarrotes</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AdmProductos.aspx" />
+    <Content Include="CatProductos.aspx" />
+    <Content Include="CfgProductos.aspx" />
+    <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-grid.rtl.css" />
+    <Content Include="Content\bootstrap-grid.rtl.min.css" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap-reboot.rtl.css" />
+    <Content Include="Content\bootstrap-reboot.rtl.min.css" />
+    <Content Include="Content\bootstrap-utilities.css" />
+    <Content Include="Content\bootstrap-utilities.min.css" />
+    <Content Include="Content\bootstrap-utilities.rtl.css" />
+    <Content Include="Content\bootstrap-utilities.rtl.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\bootstrap.rtl.css" />
+    <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Iconos\activar.png" />
+    <Content Include="Iconos\actualiza.png" />
+    <Content Include="Iconos\adjunto.png" />
+    <Content Include="Iconos\administracion.png" />
+    <Content Include="Iconos\ajustes.png" />
+    <Content Include="Iconos\alerta.png" />
+    <Content Include="Iconos\alta.png" />
+    <Content Include="Iconos\apartar.png" />
+    <Content Include="Iconos\asocia.png" />
+    <Content Include="Iconos\asterisco.png" />
+    <Content Include="Iconos\autacep.png" />
+    <Content Include="Iconos\autorizacion.png" />
+    <Content Include="Iconos\autorizadores.png" />
+    <Content Include="Iconos\autorizando.png" />
+    <Content Include="Iconos\autproceso.png" />
+    <Content Include="Iconos\autrech.png" />
+    <Content Include="Iconos\avisoglobal.png" />
+    <Content Include="Iconos\avisonopublicado.png" />
+    <Content Include="Iconos\avisopublicado.png" />
+    <Content Include="Iconos\baja.png" />
+    <Content Include="Iconos\banderaamarillo.png" />
+    <Content Include="Iconos\banderaazul.png" />
+    <Content Include="Iconos\banderanaranja.png" />
+    <Content Include="Iconos\banderapurpura.png" />
+    <Content Include="Iconos\banderarojo.png" />
+    <Content Include="Iconos\banderarosa.png" />
+    <Content Include="Iconos\banderaverde.png" />
+    <Content Include="Iconos\bitacora.png" />
+    <Content Include="Iconos\bitacorasis.png" />
+    <Content Include="Iconos\bolitaamarillo.png" />
+    <Content Include="Iconos\bolitaazul.png" />
+    <Content Include="Iconos\bolitablanco.png" />
+    <Content Include="Iconos\bolitablancoama.gif" />
+    <Content Include="Iconos\bolitanaranja.png" />
+    <Content Include="Iconos\bolitanegro.png" />
+    <Content Include="Iconos\bolitapurpura.png" />
+    <Content Include="Iconos\bolitarojo.png" />
+    <Content Include="Iconos\bolitarosa.png" />
+    <Content Include="Iconos\bolitaverde.png" />
+    <Content Include="Iconos\bolitaverderojo.gif" />
+    <Content Include="Iconos\bolitawf.png" />
+    <Content Include="Iconos\bolitawf_ant.png" />
+    <Content Include="Iconos\bullet_delete.png" />
+    <Content Include="Iconos\buscar.png" />
+    <Content Include="Iconos\calcula.png" />
+    <Content Include="Iconos\calendario.png" />
+    <Content Include="Iconos\cambest.png" />
+    <Content Include="Iconos\cambio.png" />
+    <Content Include="Iconos\cambios.png" />
+    <Content Include="Iconos\campo.png" />
+    <Content Include="Iconos\cancela.png" />
+    <Content Include="Iconos\cancelar.png" />
+    <Content Include="Iconos\captura.png" />
+    <Content Include="Iconos\capturano.png" />
+    <Content Include="Iconos\catalogo.png" />
+    <Content Include="Iconos\colores.png" />
+    <Content Include="Iconos\conda.png" />
+    <Content Include="Iconos\confirmar.png" />
+    <Content Include="Iconos\conlocal.png" />
+    <Content Include="Iconos\conmixta.png" />
+    <Content Include="Iconos\copiar.png" />
+    <Content Include="Iconos\costo.png" />
+    <Content Include="Iconos\default.png" />
+    <Content Include="Iconos\desasocia.png" />
+    <Content Include="Iconos\desselecciona.png" />
+    <Content Include="Iconos\distribucion.png" />
+    <Content Include="Iconos\ejecutar.png" />
+    <Content Include="Iconos\enviasol.png" />
+    <Content Include="Iconos\fentrega.png" />
+    <Content Include="Iconos\flechaabajo.png" />
+    <Content Include="Iconos\flechaariiba.png" />
+    <Content Include="Iconos\foto.png" />
+    <Content Include="Iconos\gestor.png" />
+    <Content Include="Iconos\gestoradm.png" />
+    <Content Include="Iconos\gestorcon.png" />
+    <Content Include="Iconos\gestores.png" />
+    <Content Include="Iconos\gestorsup.png" />
+    <Content Include="Iconos\guardar.png" />
+    <Content Include="Iconos\herramienta.png" />
+    <Content Include="Iconos\idioma_aleman.jpg" />
+    <Content Include="Iconos\idioma_espanol.jpg" />
+    <Content Include="Iconos\idioma_frances.jpg" />
+    <Content Include="Iconos\idioma_holandes.jpg" />
+    <Content Include="Iconos\idioma_ingles.jpg" />
+    <Content Include="Iconos\idioma_italiano.jpg" />
+    <Content Include="Iconos\idioma_portugues.jpg" />
+    <Content Include="Iconos\info.png" />
+    <Content Include="Iconos\liberar.png" />
+    <Content Include="Iconos\llave.png" />
+    <Content Include="Iconos\mundo.png" />
+    <Content Include="Iconos\nivel0.png" />
+    <Content Include="Iconos\niveln.png" />
+    <Content Include="Iconos\organigrama.png" />
+    <Content Include="Iconos\otroservicio.png" />
+    <Content Include="Iconos\panelbaja.png" />
+    <Content Include="Iconos\panelsube.png" />
+    <Content Include="Iconos\pics.png" />
+    <Content Include="Iconos\problema.png" />
+    <Content Include="Iconos\reasignar.png" />
+    <Content Include="Iconos\reemplaza.png" />
+    <Content Include="Iconos\regservicio.png" />
+    <Content Include="Iconos\reloj.png" />
+    <Content Include="Iconos\relojalta.png" />
+    <Content Include="Iconos\relojalto.png" />
+    <Content Include="Iconos\relojbaja.png" />
+    <Content Include="Iconos\relojcambio.png" />
+    <Content Include="Iconos\relojinicia.png" />
+    <Content Include="Iconos\reporte.png" />
+    <Content Include="Iconos\reportefiltro.png" />
+    <Content Include="Iconos\salida.png" />
+    <Content Include="Iconos\segserv.png" />
+    <Content Include="Iconos\selecciona.png" />
+    <Content Include="Iconos\seltodo.png" />
+    <Content Include="Iconos\similares.png" />
+    <Content Include="Iconos\sinequipo.png" />
+    <Content Include="Iconos\sla.png" />
+    <Content Include="Iconos\sladefault.png" />
+    <Content Include="Iconos\solmesaayuda.png" />
+    <Content Include="Iconos\soluciones.png" />
+    <Content Include="Iconos\tareas.png" />
+    <Content Include="Iconos\titular.png" />
+    <Content Include="Iconos\tomar.png" />
+    <Content Include="Iconos\usuario.png" />
+    <Content Include="Iconos\usuariovip.png" />
+    <Content Include="Iconos\vencida.png" />
+    <Content Include="Iconos\WebDesk.ico" />
+    <Content Include="Imagenes\admalertas.png" />
+    <Content Include="Imagenes\admasesorias.png" />
+    <Content Include="Imagenes\admcalificaciones.png" />
+    <Content Include="Imagenes\admcontratos.png" />
+    <Content Include="Imagenes\admcorreos.png" />
+    <Content Include="Imagenes\admgestores.png" />
+    <Content Include="Imagenes\adminvequipo.png" />
+    <Content Include="Imagenes\admprestamos.png" />
+    <Content Include="Imagenes\admreportes.png" />
+    <Content Include="Imagenes\admresguardos.png" />
+    <Content Include="Imagenes\admservicios.png" />
+    <Content Include="Imagenes\admsolicitudes.png" />
+    <Content Include="Imagenes\admusuarios.png" />
+    <Content Include="Imagenes\admworkflow.png" />
+    <Content Include="Imagenes\CentroDeControl.jpg" />
+    <Content Include="Imagenes\LogoWebDesk.png" />
+    <Content Include="Imagenes\parametros.png" />
+    <Content Include="Imagenes\usersinfoto.png" />
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\bootstrap.esm.js" />
+    <Content Include="Scripts\bootstrap.esm.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <None Include="Scripts\jquery-3.6.0.intellisense.js" />
+    <Content Include="Scripts\jquery-3.6.0.js" />
+    <Content Include="Scripts\jquery-3.6.0.min.js" />
+    <Content Include="Scripts\jquery-3.6.0.slim.js" />
+    <Content Include="Scripts\jquery-3.6.0.slim.min.js" />
+    <Content Include="Styles\WebDesk.css" />
+    <Content Include="Styles\WebDeskAux.css" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdmProductos.aspx.cs">
+      <DependentUpon>AdmProductos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdmProductos.aspx.designer.cs">
+      <DependentUpon>AdmProductos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CatProductos.aspx.cs">
+      <DependentUpon>CatProductos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CatProductos.aspx.designer.cs">
+      <DependentUpon>CatProductos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CfgProductos.aspx.cs">
+      <DependentUpon>CfgProductos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CfgProductos.aspx.designer.cs">
+      <DependentUpon>CfgProductos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap.rtl.min.css.map" />
+    <Content Include="Content\bootstrap.rtl.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-utilities.rtl.css.map" />
+    <Content Include="Content\bootstrap-utilities.min.css.map" />
+    <Content Include="Content\bootstrap-utilities.css.map" />
+    <Content Include="Content\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.rtl.css.map" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-grid.rtl.css.map" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-grid.css.map" />
+    <None Include="packages.config" />
+    <Content Include="Scripts\bootstrap.min.js.map" />
+    <Content Include="Scripts\bootstrap.js.map" />
+    <Content Include="Scripts\bootstrap.esm.min.js.map" />
+    <Content Include="Scripts\bootstrap.esm.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <Content Include="Scripts\jquery-3.6.0.slim.min.map" />
+    <Content Include="Scripts\jquery-3.6.0.min.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>61255</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:61255/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
