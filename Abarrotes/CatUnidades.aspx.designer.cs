@@ -10,7 +10,7 @@
 namespace Abarrotes {
     
     
-    public partial class AdmProductos {
+    public partial class CatProductos {
         
         /// <summary>
         /// form1 control.
@@ -65,15 +65,6 @@ namespace Abarrotes {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btn_CatProducto;
-        
-        /// <summary>
-        /// btn_CatUnidades control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_CatUnidades;
         
         /// <summary>
         /// imb_AyudaGrid control.

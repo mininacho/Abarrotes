@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AdmProductos.aspx.cs" Inherits="Abarrotes.AdmProductos" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CatUnidades.aspx.cs" Inherits="Abarrotes.CatProductos" %>
 
 <!DOCTYPE html>
 
@@ -44,7 +44,7 @@
 
                                 <asp:Label ID="lbl_InfoTitulo"
                                     runat="server"
-                                    Text="Administrador de Productos">
+                                    Text="Catálogo de Unidades">
                                 </asp:Label>
 
                             </h3>
@@ -70,18 +70,8 @@
 
                             <asp:Button ID="btn_CatProducto"
                                 runat="server"
-                                Text="Cat Tipo de Productos"
+                                Text="Regresar "
                                 OnClick="btn_CatProducto_Click"
-                                CssClass="wd_boton" />
-
-                        </div>
-
-                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 text-left">
-
-                            <asp:Button ID="btn_CatUnidades"
-                                runat="server"
-                                Text="Cat. Tipo de Unidades"
-                                OnClick="btn_CatUnidades_Click"
                                 CssClass="wd_boton" />
 
                         </div>
@@ -139,7 +129,7 @@
 
                                                 <asp:Label ID="lbl_InfoActivo"
                                                     runat="server"
-                                                    Text="Producto Activo">
+                                                    Text="Unidad Activa">
                                                 </asp:Label>
 
                                             </div>
@@ -194,15 +184,8 @@
                                             <ItemStyle HorizontalAlign="Center" />
                                         </asp:TemplateField>
 
-                                        <asp:BoundField DataField="producto" HeaderText="Producto" />
-                                        <asp:BoundField DataField="tipo" HeaderText="Tipo"></asp:BoundField>
-                                        <asp:BoundField DataField="descripcion" HeaderText="Descripción" />
-
-                                        <asp:BoundField DataField="costo_venta" HeaderText="Costo de Venta" />
-
                                         <asp:BoundField DataField="unidad" HeaderText="Unidad" />
-                                        <asp:BoundField DataField="existencia" HeaderText="Existencia" />
-                                        <asp:BoundField DataField="costo_compra" HeaderText="Costo de Compra" />
+                                        <asp:BoundField DataField="nombre" HeaderText="Nombre"></asp:BoundField>
 
                                     </Columns>
                                     <EditRowStyle BackColor="#999999" />
@@ -234,3 +217,4 @@
 
 </body>
 </html>
+

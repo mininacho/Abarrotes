@@ -30,5 +30,10 @@ namespace Abarrotes
             Response.Redirect("CfgProductos.aspx");
 
         }
+
+        protected void btn_CatUnidades_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("CatUnidades.aspx");
+        }
     }
 }
