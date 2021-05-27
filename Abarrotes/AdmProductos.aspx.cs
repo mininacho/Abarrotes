@@ -35,5 +35,10 @@ namespace Abarrotes
         {
             Response.Redirect("CatUnidades.aspx");
         }
+
+        protected void btn_Proveedores_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("CatProveedores.aspx");
+        }
     }
 }

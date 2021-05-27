@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AdmProductos.aspx.cs" Inherits="Abarrotes.AdmProductos" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CatProveedores.aspx.cs" Inherits="Abarrotes.CatProveedores" %>
 
 <!DOCTYPE html>
 
@@ -44,7 +44,7 @@
 
                                 <asp:Label ID="lbl_InfoTitulo"
                                     runat="server"
-                                    Text="Administrador de Productos">
+                                    Text="Catálogo de Proveedores">
                                 </asp:Label>
 
                             </h3>
@@ -68,30 +68,10 @@
 
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 text-left">
 
-                            <asp:Button ID="btn_CatProducto"
+                            <asp:Button ID="btn_CatProveedor"
                                 runat="server"
-                                Text="Cat Tipo de Productos"
-                                OnClick="btn_CatProducto_Click"
-                                CssClass="wd_boton" />
-
-                        </div>
-
-                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 text-left">
-
-                            <asp:Button ID="btn_CatUnidades"
-                                runat="server"
-                                Text="Cat. Tipo de Unidades"
-                                OnClick="btn_CatUnidades_Click"
-                                CssClass="wd_boton" />
-
-                        </div>
-
-                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 text-left">
-
-                            <asp:Button ID="btn_Proveedores"
-                                runat="server"
-                                Text="Cat Tipo de Productos"
-                                OnClick="btn_Proveedores_Click"
+                                Text="Regresar "
+                                OnClick="bbtn_CatProveedor_Click"
                                 CssClass="wd_boton" />
 
                         </div>
@@ -149,7 +129,7 @@
 
                                                 <asp:Label ID="lbl_InfoActivo"
                                                     runat="server"
-                                                    Text="Producto Activo">
+                                                    Text="Unidad Activa">
                                                 </asp:Label>
 
                                             </div>
@@ -204,15 +184,8 @@
                                             <ItemStyle HorizontalAlign="Center" />
                                         </asp:TemplateField>
 
-                                        <asp:BoundField DataField="producto" HeaderText="Producto" />
-                                        <asp:BoundField DataField="tipo" HeaderText="Tipo"></asp:BoundField>
-                                        <asp:BoundField DataField="descripcion" HeaderText="Descripción" />
-
-                                        <asp:BoundField DataField="costo_venta" HeaderText="Costo de Venta" />
-
-                                        <asp:BoundField DataField="unidad" HeaderText="Unidad" />
-                                        <asp:BoundField DataField="existencia" HeaderText="Existencia" />
-                                        <asp:BoundField DataField="costo_compra" HeaderText="Costo de Compra" />
+                                        <asp:BoundField DataField="proveedor" HeaderText="Proveedor" />
+                                        <asp:BoundField DataField="nombre" HeaderText="Nombre Proovedor"></asp:BoundField>
 
                                     </Columns>
                                     <EditRowStyle BackColor="#999999" />

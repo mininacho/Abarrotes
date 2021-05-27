@@ -10,7 +10,7 @@
 namespace Abarrotes {
     
     
-    public partial class AdmProductos {
+    public partial class CatProveedores {
         
         /// <summary>
         /// form1 control.
@@ -58,31 +58,13 @@ namespace Abarrotes {
         protected global::System.Web.UI.UpdatePanel udp_SeccCat;
         
         /// <summary>
-        /// btn_CatProducto control.
+        /// btn_CatProveedor control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_CatProducto;
-        
-        /// <summary>
-        /// btn_CatUnidades control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_CatUnidades;
-        
-        /// <summary>
-        /// btn_Proveedores control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_Proveedores;
+        protected global::System.Web.UI.WebControls.Button btn_CatProveedor;
         
         /// <summary>
         /// imb_AyudaGrid control.
